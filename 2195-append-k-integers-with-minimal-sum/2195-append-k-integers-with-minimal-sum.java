@@ -5,7 +5,7 @@ class Solution {
         HashSet<Integer> set=new HashSet<>();
         for(int num:nums){
             if(num<=k && !set.contains(num)){
-                sum=sum-num;
+                sum=sum-(long)num;
                 count++;
             }
             set.add(num);
